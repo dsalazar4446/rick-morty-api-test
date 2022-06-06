@@ -1,0 +1,14 @@
+<h1>Episode List</h1>
+<div class="card-container">
+  <mat-card (click)="detail(i)"  *ngFor="let item of episodes; let i = index"
+    class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{item.name}}</mat-card-title>
+      <mat-card-subtitle>Air Date: {{item.air_date}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p><b>Episode:</b> {{item.episode}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+<app-paginator></app-paginator>

@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container" [hasBackdrop]="false">
+  <mat-drawer class="drawer"  [opened]="opened" #drawer mode="side">
+    <mat-action-list>
+      <button [routerLink]="['/characters/list']" routerLinkActive="router-link-active"  routerLinkActive="active-link" mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">account_circle</mat-icon>
+        Characters
+      </button>
+
+      <button [routerLink]="['/locations/list']" routerLinkActive="router-link-active" routerLinkActive="active-link"
+        mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">add_location</mat-icon>
+        Locations
+      </button>
+
+      <button [routerLink]="['/episodes/list']" routerLinkActive="router-link-active" routerLinkActive="active-link"
+        mat-list-item>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">slow_motion_video</mat-icon>
+        Episodes
+      </button>
+    </mat-action-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <ng-content></ng-content>
+  </mat-drawer-content>
+</mat-drawer-container>

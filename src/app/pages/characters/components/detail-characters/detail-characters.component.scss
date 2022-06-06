@@ -1,0 +1,25 @@
+.example-card {
+  max-width: 400px;
+  max-height: 600px;
+}
+img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card-container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  min-height: 82vh;
+}
+
+
+.actions {
+  display: flex !important;
+  justify-content: end;
+
+}
+h1 {
+  margin-top: 15px;
+  margin-left: 15px;
+}

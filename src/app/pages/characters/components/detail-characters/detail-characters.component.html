@@ -1,0 +1,23 @@
+<h1>Details</h1>
+<div class="card-container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{character.name}}</mat-card-title>
+      <mat-card-subtitle>{{character.species}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{character.image}}">
+    <mat-card-content>
+      <p> <b>Status:</b> {{character.status}}</p>
+      <p> <b>Gender:</b> {{character.gender}}</p>
+      <p> <b>Origin:</b> {{character.origin?.name}}</p>
+      <p> <b>Location:</b> {{character.location?.name}}</p>
+      <p> <b>Type:</b> {{character.type || 'None'}}</p>
+
+    </mat-card-content>
+    <mat-card-actions class="actions">
+      <button mat-raised-button color="primary" mat-button [routerLink]="['/characters/list']">BACK</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
