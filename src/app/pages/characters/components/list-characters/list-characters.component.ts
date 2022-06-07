@@ -20,6 +20,7 @@ export class ListCharactersComponent implements OnInit {
   loading$: Observable<any> = new Observable();
   change$: Observable<any> = new Observable();
   initialCharacterValue: Array<Character> = [];
+
   constructor(private store: Store<AppState>) {}
 
   ngOnInit(): void {
